@@ -1,0 +1,36 @@
+{
+  "name": "icelandic",
+  "version": "1.0.0",
+  "description": "Simple helper methods for the Icelandic language",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ],
+    "tap": false,
+    "failFast": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/islenska-org/icelandic.git"
+  },
+  "keywords": [
+    "icelandic",
+    "language"
+  ],
+  "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/islenska-org/icelandic/issues"
+  },
+  "homepage": "https://github.com/islenska-org/icelandic#readme",
+  "devDependencies": {
+    "ava": "~0.16.0"
+  }
+}
