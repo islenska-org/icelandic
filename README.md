@@ -28,7 +28,7 @@ A variant of decompose that will also remove non-word characters and clean up sp
 
     const icelandic = require("icelandic");
     icelandic.decompose("Sævör grét áðan því úlpan var ónýt.")
-  // = "Saevor-gret-adan-thvi-ulpan-var-onyt"
+    // = "Saevor-gret-adan-thvi-ulpan-var-onyt"
 
 
 ### icelandic.alphabetical
@@ -46,7 +46,6 @@ Report whether a number demands a plural or singular declension. Icelandic langu
     const icelandic = require("icelandic");
     icelandic.isPlural(11)
     // = false
-
 
 
 
