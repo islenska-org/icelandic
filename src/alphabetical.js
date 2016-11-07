@@ -24,8 +24,6 @@ module.exports = function ( a, b ) {
     const bV = alphabetIndex[b[c]];
     // because iceN has a 1 based index, any falsy value means "undefined" character
     if ( !aV || !bV ) {
-      if ( !aV ) { console.log( a[c] ); }
-      if ( !bV ) { console.log( b[c] ); }
       // either char is not defined: we can JS sort them
       return a[c] < b[c] ? -1 : a[c] > b[c] ? 1 : 0;
     }
