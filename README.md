@@ -47,6 +47,21 @@ Report whether a number demands a plural or singular declension. Icelandic langu
     icelandic.isPlural(11)
     // = false
 
+Additionally, the collection provides some common strings useful for internationalization:
+
+### icelandic.i18n
+
+Exists as an object which members are names of days and months in the Icelandic language:
+
+    console.log(icelandic.i18n);
+    // {
+    //   'decimal': ',',
+    //   'thousands': '.',
+    //   'days': ['Sunnudagur', 'Mánudagur', ... ],
+    //   'shortDays': ['Sun', 'Mon', ... ],
+    //   'months': ['Janúar', 'Febrúar', ... ],
+    //   'shortMonths': ['Jan', 'Feb', ... ]
+    // }
 
 
 [isl]: https://en.wikipedia.org/wiki/Icelandic_language

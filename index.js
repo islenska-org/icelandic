@@ -5,5 +5,6 @@ module.exports = {
   decompose: require( './src/decompose' ),
   alphabetical: require( './src/alphabetical' ),
   isPlural: require( './src/isplural' ),
-  slugify: require( './src/slugify' )
+  slugify: require( './src/slugify' ),
+  i18n: require( './src/i18n' )
 };
