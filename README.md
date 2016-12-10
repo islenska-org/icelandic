@@ -56,6 +56,21 @@ Count the number of syllables that make up an Icelandic word. This is basically 
     // = 3
 
 
+### icelandic.rhymeEncode(word [, number])
+
+Reduces a word into a simpler version that can be matched with other similar reductions to determine if the words rhyme.
+
+    const icelandic = require("icelandic");
+    icelandic.rhymeEncode("heimkynninu")
+    // = 'h1mkininu'
+
+The function takes a second argument that will limit the output to a number of syllables. Rhymes in Icelandic generally only use the final 1-2 syllables, so a more realistic way of determining if words rhyme would be something like comparing the final 2 syllables:
+
+    const rhymeEncode = require("icelandic").rhymeEncode;
+    rhymeEncode( 'augljósa', 2 ) === rhymeEncode( 'laktósa', 2 );
+    // = true
+
+
 
 Additionally, the collection provides some common strings useful for internationalization:
 

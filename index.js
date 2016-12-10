@@ -7,5 +7,6 @@ module.exports = {
   isPlural: require( './src/isplural' ),
   slugify: require( './src/slugify' ),
   syllableCount: require( './src/syllableCount' ),
+  rhymeEncode: require( './src/rhymeEncode' ),
   i18n: require( './src/i18n' )
 };
