@@ -47,6 +47,16 @@ Report whether a number demands a plural or singular declension. Icelandic langu
     icelandic.isPlural(11)
     // = false
 
+### icelandic.syllableCount
+
+Count the number of syllables that make up an Icelandic word. This is basically as simple as counting the vowels, except Icelandic has cases of dipthongs that need to be counted specially:
+
+    const icelandic = require("icelandic");
+    icelandic.syllableCount("augasteinn")
+    // = 3
+
+
+
 Additionally, the collection provides some common strings useful for internationalization:
 
 ### icelandic.i18n
