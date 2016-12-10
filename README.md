@@ -13,7 +13,7 @@ It's available on NPM:
 
 These are the methods available and what they do:
 
-### icelandic.decompose
+### icelandic.decompose(word)
 
 Replaces special Icelandic characters in a string with their ASCII equivalents.
 
@@ -22,7 +22,7 @@ Replaces special Icelandic characters in a string with their ASCII equivalents.
     // = "Saevor gret adan thvi ulpan var onyt."
 
 
-### icelandic.slugify
+### icelandic.slugify(word)
 
 A variant of decompose that will also remove non-word characters and clean up spaces and punctuation into dashes:
 
@@ -31,7 +31,7 @@ A variant of decompose that will also remove non-word characters and clean up sp
     // = "Saevor-gret-adan-thvi-ulpan-var-onyt"
 
 
-### icelandic.alphabetical
+### icelandic.alphabetical(word1, word2)
 
 Collate function for sorting strings using Icelandic alphabetical rules.
 
@@ -39,7 +39,7 @@ Collate function for sorting strings using Icelandic alphabetical rules.
     ["áríðandi", "ári", "árið", "Ári"].sort(icelandic.alphabetical)
     // = [ "ári", "Ári", "árið", "áríðandi" ]
 
-### icelandic.isPlural
+### icelandic.isPlural(number)
 
 Report whether a number demands a plural or singular declension. Icelandic language has only a single plural form.
 
@@ -47,7 +47,7 @@ Report whether a number demands a plural or singular declension. Icelandic langu
     icelandic.isPlural(11)
     // = false
 
-### icelandic.syllableCount
+### icelandic.syllableCount(word)
 
 Count the number of syllables that make up an Icelandic word. This is basically as simple as counting the vowels, except Icelandic has cases of dipthongs that need to be counted specially:
 
