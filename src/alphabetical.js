@@ -22,7 +22,7 @@ module.exports = function ( a, b ) {
   while ( ++c < l ) {
     const aV = alphabetIndex[a[c]];
     const bV = alphabetIndex[b[c]];
-    // because iceN has a 1 based index, any falsy value means "undefined" character
+    // because alphabetIndex has a 1 based index, any falsy value means "undefined" character
     if ( !aV || !bV ) {
       // either char is not defined: we can JS sort them
       return a[c] < b[c] ? -1 : a[c] > b[c] ? 1 : 0;
