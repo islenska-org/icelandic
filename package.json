@@ -8,12 +8,12 @@
   },
   "ava": {
     "files": [
-      "test/*.js"
+      "src/**/*-test.js"
     ],
     "source": [
       "src/**/*.js"
     ],
-    "tap": false,
+    "tap": true,
     "failFast": true
   },
   "repository": {

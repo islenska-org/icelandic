@@ -4,7 +4,7 @@
 module.exports = {
   decompose: require( './src/decompose' ),
   alphabetical: require( './src/alphabetical' ),
-  isPlural: require( './src/isplural' ),
+  isPlural: require( './src/isPlural' ),
   slugify: require( './src/slugify' ),
   syllableCount: require( './src/syllableCount' ),
   rhymeEncode: require( './src/rhymeEncode' ),
