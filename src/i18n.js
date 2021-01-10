@@ -10,10 +10,10 @@ const daynames = [
 ];
 
 module.exports = {
-  'decimal': ',',
-  'thousands': '.',
-  'days': daynames,
-  'shortDays': daynames.map( d => d.slice( 0, 3 ) ),
-  'months': monthnames,
-  'shortMonths': monthnames.map( d => d.slice( 0, 3 ) )
+  decimal: ',',
+  thousands: '.',
+  days: daynames,
+  shortDays: daynames.map(d => d.slice(0, 3)),
+  months: monthnames,
+  shortMonths: monthnames.map(d => d.slice(0, 3))
 };

@@ -1,20 +1,11 @@
 {
   "name": "icelandic",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Simple helper methods for the Icelandic language",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
-  },
-  "ava": {
-    "files": [
-      "src/**/*-test.js"
-    ],
-    "source": [
-      "src/**/*.js"
-    ],
-    "tap": true,
-    "failFast": true
+    "lint": "eslint src",
+    "test": "tape src/**-test.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +22,8 @@
   },
   "homepage": "https://github.com/islenska-org/icelandic#readme",
   "devDependencies": {
-    "ava": "~0.16.0"
+    "@borgar/eslint-config": "~2.0.2",
+    "eslint": "~7.17.0",
+    "tape": "~5.1.1"
   }
 }

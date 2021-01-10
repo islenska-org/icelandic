@@ -30,16 +30,16 @@ const rules = [
   [ 'au', '2' ]
 ];
 
-module.exports = function ( word, syll ) {
+module.exports = function (word, syll) {
   let w = word.trim().toLowerCase();
-  w = w.replace( /[^a-záéíóúðöæþý]/, '' );
-  rules.forEach( d => {
-    w = w.replace( d[0], d[1], 'g' );
+  w = w.replace(/[^a-záéíóúðöæþý]/, '');
+  rules.forEach(d => {
+    w = w.replace(d[0], d[1], 'g');
   });
   // given a number as a secodn argument, retun N last syllables
-  if ( syll && isFinite( syll ) ) {
-    const b = w.split( /(?=[aáeéiíoóuúyýæö123])/ );
-    return b.slice( -Math.abs( syll ) ).join( '' );
+  if (syll && isFinite(syll)) {
+    const b = w.split(/(?=[aáeéiíoóuúyýæö123])/);
+    return b.slice(-Math.abs(syll)).join('');
   }
   return w;
 };
