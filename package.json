@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    "test": "tape src/**-test.js"
+    "test": "tape src/**-test.js |tap-min"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@borgar/eslint-config": "~2.0.2",
     "eslint": "~7.17.0",
+    "tap-min": "~2.0.0",
     "tape": "~5.1.1"
   }
 }
