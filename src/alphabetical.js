@@ -25,7 +25,8 @@ module.exports = function (a, b) {
     // because alphabetIndex has a 1 based index, any falsy value means "undefined" character
     if (!aV || !bV) {
       // either char is not defined: we can JS sort them
-      return a[c] < b[c] ? -1 : a[c] > b[c] ? 1 : 0;
+      if (a[c] < b[c]) { return -1; }
+      return a[c] > b[c] ? 1 : 0;
     }
     else if (aV !== bV) {
       // it's not the same char, go by value
@@ -34,7 +35,8 @@ module.exports = function (a, b) {
   }
   // words are not identical but didn't sort: this must be the same word but casing is different!
   if (al === bl) {
-    return a > b ? -1 : a < b ? 1 : 0;
+    if (a > b) { return -1; }
+    return a < b ? 1 : 0;
   }
   // words are not identical, so the longer one is the shorter+suffix
   return al - bl;
