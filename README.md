@@ -39,13 +39,37 @@ Collate function for sorting strings using Icelandic alphabetical rules.
     ["áríðandi", "ári", "árið", "Ári"].sort(icelandic.alphabetical)
     // = [ "ári", "Ári", "árið", "áríðandi" ]
 
+
 ### icelandic.isPlural(number)
 
-Report whether a number demands a plural or singular declension. Icelandic language has only a single plural form.
+Report whether an integer demands a plural or singular declension. Icelandic language has only a single plural form.
 
     const icelandic = require("icelandic");
     icelandic.isPlural(11)
     // = false
+
+
+### icelandic.numerals(number [, gender] [, yearMode])
+
+Encodes a number into word numbers. It supports a range up to 10<sup>21</sup>. Fractions are supported but limited to three decimals.
+
+    const icelandic = require("icelandic");
+    icelandic.numerals(123456789)
+    // = "hundrað tuttugu og þrjár milljónir fjögur hundruð fimmtíu og sex þúsund sjö hundruð áttatíu og níu"
+
+The `gender` argument should be one of `"kk"` (masculine), `"kvk"` (feminine), `"hvk"` (neuter). Function will default to neuter if nothing is provided.
+
+    icelandic.numerals(53, "kk")
+    // = "fimmtíu og þrír"
+
+    icelandic.numerals(53, "kvk")
+    // = "fimmtíu og þrjár"
+
+The `yearMode` argument can be made to get the less conventional _teen_ form of hundreds for the range of numbers from 1000–2000.
+
+    icelandic.numerals(1985)
+    // = "nítján hundruð áttatíu og fimm"
+
 
 ### icelandic.syllableCount(word)
 
