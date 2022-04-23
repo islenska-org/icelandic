@@ -67,7 +67,7 @@ The `gender` argument should be one of `"kk"` (masculine), `"kvk"` (feminine), `
 
 The `yearMode` argument can be made to get the less conventional _teen_ form of hundreds for the range of numbers from 1000–2000.
 
-    icelandic.numerals(1985)
+    icelandic.numerals(1985, "hvk", true)
     // = "nítján hundruð áttatíu og fimm"
 
 
