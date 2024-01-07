@@ -1,13 +1,12 @@
 /*
 ** Simple helper methods for the Icelandic language
 */
-module.exports = {
-  decompose: require('./src/decompose'),
-  alphabetical: require('./src/alphabetical'),
-  isPlural: require('./src/isPlural'),
-  slugify: require('./src/slugify'),
-  numerals: require('./src/numerals'),
-  syllableCount: require('./src/syllableCount'),
-  rhymeEncode: require('./src/rhymeEncode'),
-  i18n: require('./src/i18n')
-};
+
+exports.decompose = require('./src/decompose');
+exports.alphabetical = require('./src/alphabetical');
+exports.isPlural = require('./src/isPlural');
+exports.slugify = require('./src/slugify');
+exports.numerals = require('./src/numerals');
+exports.syllableCount = require('./src/syllableCount');
+exports.rhymeEncode = require('./src/rhymeEncode');
+exports.i18n = require('./src/i18n');
