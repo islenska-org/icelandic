@@ -1,10 +1,10 @@
 # Icelandic
 
-This is a collection of ES6 methods for dealthing with [Icelandic language][isl] text.
+This is a collection of ES6 methods for dealing with [Icelandic language][isl] text.
 
 ## Installing
 
-It's available on NPM:
+It's available on npm:
 
     npm i --save icelandic
 
